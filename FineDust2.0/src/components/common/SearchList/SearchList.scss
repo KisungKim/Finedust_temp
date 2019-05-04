@@ -1,0 +1,18 @@
+@import '~styles/utils';
+
+.search-list{
+  background: $oc-indigo-1;
+  border : 1px solid black;
+  width : 60%;
+  height: 30vh;
+  overflow : auto;
+  position: absolute;
+  left : 20%;
+  
+  z-index: 100;
+  @include material-shadow(5);  
+}
+
+.hidden{
+  visibility : hidden;  
+}

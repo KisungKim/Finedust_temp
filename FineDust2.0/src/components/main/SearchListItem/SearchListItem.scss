@@ -1,0 +1,17 @@
+@import '~styles/utils';
+
+.search-list-item{
+  cursor: pointer;
+  font-size: 1.5rem;  
+  &:hover {
+    background : $oc-indigo-3;
+    color : white;
+  }  
+  
+}
+
+// 키보드로 리스트탈 때
+.selected {
+  background : $oc-indigo-3;
+  color : white;
+}  

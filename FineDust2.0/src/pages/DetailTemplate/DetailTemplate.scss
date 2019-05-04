@@ -1,0 +1,32 @@
+@import '~styles/utils';
+
+.whole {
+  display : flex;
+  flex-direction: column;
+  justify-content: space-around;  
+  .searchbar {
+    text-align: center;
+  }
+
+  .detail-template {
+    height: calc(100vh - 140px);    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .rigth-part {
+      background: red;
+      display: flex;
+      flex-direction: column;
+      width: calc(100% - 400px);      
+      background: #f1f3f5;
+      @include media("<large"){
+        width : 100%;
+        height: auto;
+      }
+      .park-info {
+        height: 32vh;
+        background: #f1f3f5;
+      }
+    }
+  }
+}

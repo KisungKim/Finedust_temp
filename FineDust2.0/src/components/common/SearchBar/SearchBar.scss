@@ -1,0 +1,31 @@
+@import "~styles/utils";
+
+.search-bar {
+  input {
+    width: 60%;
+    height: 70px;
+    font-size: 50px;    
+    border: none;
+    border-bottom: 1px solid #181818;    
+    text-align: center; 
+    background: transparent;
+    &::placeholder{
+      color : white;
+    }
+    @include media("<medium") {      
+      width: 80%;
+      height: 70px;
+      font-size: 30px;
+    }
+  }
+}
+
+
+// detail 페이지에서의 placeholder 색 조절
+.whole{
+  input{
+    &::placeholder{
+      color : black;
+    }
+  }
+}
